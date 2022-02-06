@@ -26,7 +26,7 @@ async def start(client, message):
                 InlineKeyboardButton('🤖 Updates', url='https://t.me/rai_info17')
             ],
             [
-                InlineKeyboardButton('ℹ️ Help', url=f"https://t.me/{temp.U_NAME}?start=help"),
+                InlineKeyboardButton('ℹ😇 RAI', url=f"https://t.me/rithesh_rkrm_17"),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -133,6 +133,13 @@ async def start(client, message):
                     f_caption=f_caption
             if f_caption is None:
                 f_caption = f"{title}"
+            buttons = [
+                    [
+                        InlineKeyboardButton('Group', url='https://t.me/BlasterMovieszz'),
+                        InlineKeyboardButton('Latest Movies', url='https://t.me/blasters_monthly')
+                    ]
+                    ] 
+
             try:
                 await client.send_cached_media(
                     chat_id=message.from_user.id,
@@ -237,6 +244,13 @@ async def start(client, message):
             f_caption=f_caption
     if f_caption is None:
         f_caption = f"{files.file_name}"
+         buttons = [
+                    [
+                        InlineKeyboardButton('Group', url='https://t.me/BlasterMovieszz'),
+                        InlineKeyboardButton('Latest Movies', url='https://t.me/blasters_monthly')
+                    ]
+                    ]
+ 
     await client.send_cached_media(
         chat_id=message.from_user.id,
         file_id=file_id,

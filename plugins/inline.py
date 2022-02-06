@@ -99,10 +99,11 @@ async def answer(bot, query):
 
 def get_reply_markup(query):
     buttons = [
-        [
-            InlineKeyboardButton('Group', url='https://t.me/BlasterMovieszz')
-        ]
-        ]
+                    [
+                        InlineKeyboardButton('Group', url='https://t.me/BlasterMovieszz'),
+                        InlineKeyboardButton('Latest Movies', url='https://t.me/blasters_monthly'),
+                    ]
+                    ]
     return InlineKeyboardMarkup(buttons)
 
 

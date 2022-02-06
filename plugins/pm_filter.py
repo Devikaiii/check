@@ -356,6 +356,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     ]
                     ]
 
+
         try:
             if AUTH_CHANNEL and not await is_subscribed(client, query):
                 await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
@@ -404,7 +405,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                         InlineKeyboardButton('Group', url='https://t.me/BlasterMovieszz'),
                         InlineKeyboardButton('Latest Movies', url='https://t.me/blasters_monthly')
                     ]
-                    ]    
+                    ] 
+   
         await query.answer()
         await client.send_cached_media(
             chat_id=query.from_user.id,
@@ -449,7 +451,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "about":
         buttons = [[
             InlineKeyboardButton('🤖 Updates', url='https://t.me/rai_info17'),
-            InlineKeyboardButton('♥️ Source', url='https://t.me/rai_info17')
+            InlineKeyboardButton('♥️ RAI', url='https://t.me/rithesh_rkrm_17')
         ], [
             InlineKeyboardButton('🏠 Home', callback_data='start'),
             InlineKeyboardButton('🔐 Close', callback_data='close_data')

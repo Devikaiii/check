@@ -349,6 +349,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
             f_caption = f_caption
         if f_caption is None:
             f_caption = f"{files.file_name}"
+        buttons = [
+                    [
+                        InlineKeyboardButton('Group', url='https://t.me/BlasterMovieszz'),
+                        InlineKeyboardButton('Latest Movies', url='https://t.me/blasters_monthly'),
+                    ]
+                    ]
 
         try:
             if AUTH_CHANNEL and not await is_subscribed(client, query):
@@ -393,6 +399,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 f_caption = f_caption
         if f_caption is None:
             f_caption = f"{title}"
+        buttons = [
+                    [
+                        InlineKeyboardButton('Group', url='https://t.me/BlasterMovieszz'),
+                        InlineKeyboardButton('Latest Movies', url='https://t.me/blasters_monthly'),
+                    ]
+                    ]    
         await query.answer()
         await client.send_cached_media(
             chat_id=query.from_user.id,
@@ -407,7 +419,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [
             InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/TeamEvamaria')
+            InlineKeyboardButton('🤖 Updates', url='https://t.me/rai_info17')
         ], [
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
             InlineKeyboardButton('😊 About', callback_data='about')
@@ -438,8 +450,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/TeamEvamaria'),
-            InlineKeyboardButton('♥️ Source', callback_data='source')
+            InlineKeyboardButton('🤖 Updates', url='https://t.me/rai_info17'),
+            InlineKeyboardButton('♥️ Source', url='https://t.me/rai_info17')
         ], [
             InlineKeyboardButton('🏠 Home', callback_data='start'),
             InlineKeyboardButton('🔐 Close', callback_data='close_data')

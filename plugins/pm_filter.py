@@ -349,6 +349,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
             f_caption = f_caption
         if f_caption is None:
             f_caption = f"{files.file_name}"
+        buttons = [
+                    [
+                        InlineKeyboardButton('Group', url='https://t.me/BlasterMovieszz'),
+                        InlineKeyboardButton('Latest Movies', url='https://t.me/blasters_monthly'),
+                    ]
+                    ]
             
 
         try:

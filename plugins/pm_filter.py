@@ -347,19 +347,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
             except Exception as e:
                 logger.exception(e)
             f_caption = f_caption
-            buttons = [
-                    [
-                        InlineKeyboardButton('Group', url='https://t.me/BlasterMovieszz'),
-                        InlineKeyboardButton('Latest Movies', url='https://t.me/blasters_monthly')
-                    ]
-                    ]
-                    
         if f_caption is None:
             f_caption = f"{files.file_name}"
         buttons = [
                     [
                         InlineKeyboardButton('Group', url='https://t.me/BlasterMovieszz'),
-                        InlineKeyboardButton('Latest Movies', url='https://t.me/blasters_monthly'),
+                        InlineKeyboardButton('Latest Movies', url='https://t.me/blasters_monthly')
                     ]
                     ]
             
@@ -408,11 +401,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         if f_caption is None:
             f_caption = f"{title}"
         buttons = [
-                    [
-                        InlineKeyboardButton('Group', url='https://t.me/BlasterMovieszz'),
-                        InlineKeyboardButton('Latest Movies', url='https://t.me/blasters_monthly'),
-                    ]
-                    ]
+                [
+                    InlineKeyboardButton('Group', url='https://t.me/BlasterMovieszz'),
+                    InlineKeyboardButton('Latest Movies', url='https://t.me/blasters_monthly'),
+                ]
+                  ]
 
         await query.answer()
         await client.send_cached_media(

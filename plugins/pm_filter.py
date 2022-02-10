@@ -347,6 +347,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
             except Exception as e:
                 logger.exception(e)
             f_caption = f_caption
+            buttons = [
+                    [
+                        InlineKeyboardButton('Group', url='https://t.me/BlasterMovieszz'),
+                        InlineKeyboardButton('Latest Movies', url='https://t.me/blasters_monthly')
+                    ]
+                    ]
+                    
         if f_caption is None:
             f_caption = f"{files.file_name}"
         buttons = [

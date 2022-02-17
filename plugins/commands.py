@@ -148,11 +148,11 @@ async def start(client, message):
             if f_caption is None:
                 f_caption = f"{title}"
             buttons = [
-                    [
-                        InlineKeyboardButton('Group', url='https://t.me/BlasterMovieszz'),
-                        InlineKeyboardButton('Latest Movies', url='https://t.me/blasters_monthly')
-                    ]
-                    ] 
+                [
+                    InlineKeyboardButton('Group', url='https://t.me/BlasterMovieszz'),
+                    InlineKeyboardButton('Latest Movies', url='https://t.me/blasters_monthly')
+                ]
+                ] 
 
             try:
                 await client.send_cached_media(
@@ -259,12 +259,11 @@ async def start(client, message):
     if f_caption is None:
         f_caption = f"{files.file_name}"
     buttons = [
-                    [
-                        InlineKeyboardButton('Group', url='https://t.me/BlasterMovieszz'),
-                        InlineKeyboardButton('Latest Movies', url='https://t.me/blasters_monthly')
-                    ]
-                    ]
- 
+        [
+            InlineKeyboardButton('Group', url='https://t.me/BlasterMovieszz'),
+            InlineKeyboardButton('Latest Movies', url='https://t.me/blasters_monthly')
+        ]
+        ]
     await client.send_cached_media(
         chat_id=message.from_user.id,
         file_id=file_id,

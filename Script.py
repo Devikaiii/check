@@ -1,5 +1,5 @@
 class script(object):
-    START_TXT = """HELLO {},
+    START_TXT = """Hello {},
 It's Power Full Here 😎
 Add Me To Your Group And Make Sure Iam Admin There!
 And Enjoy My Pever Show.....!!!🤪

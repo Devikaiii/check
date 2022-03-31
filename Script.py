@@ -1,6 +1,5 @@
 class script(object):
     START_TXT = """HELLO {},
-𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 <a href=https://t.me/{}>{}</a>, 👋Hello there
 It's Power Full Here 😎
 Add Me To Your Group And Make Sure Iam Admin There!
 And Enjoy My Pever Show.....!!!🤪

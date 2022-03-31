@@ -100,7 +100,7 @@ async def start(client, message):
             InlineKeyboardButton('🤖 Updates', url='https://t.me/rai_info17')
             ],
             [
-             InlineKeyboardButton('Group', url='https://t.me/BlasterMovieszz'),
+             InlineKeyboardButton('Main Group', url='https://t.me/BlasterMovieszz'),
              InlineKeyboardButton('Latest Movies', url='https://t.me/blasters_monthly'),
             ],
             [
@@ -149,7 +149,7 @@ async def start(client, message):
                 f_caption = f"{title}"
             buttons = [
                 [
-                    InlineKeyboardButton('Group', url='https://t.me/BlasterMovieszz'),
+                    InlineKeyboardButton('Main Group', url='https://t.me/BlasterMovieszz'),
                     InlineKeyboardButton('Latest Movies', url='https://t.me/blasters_monthly')
                 ]
                 ] 

@@ -135,7 +135,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit('This Movie Not Found In DataBase.....!!!!!!!!  Movie is not released on Telegram i guess :(')
+            k = await query.message.edit('This Movie Not Found In DataBase.....!!!!!!!!  Movie is not released on Telegram i guess :( Request here soon will be avalable @raixpiro_bot')
             await asyncio.sleep(10)
             await k.delete()
 
@@ -721,7 +721,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"Here is what i found for your query {search} powered by @raixpiro_bot"
+        cap = f"Here is what i found for your query {search} powered by [『ᴘɪʀᴏ』](https://t.me/rithesh_rkrm_17)"
     if imdb and imdb.get('poster'):
         try:
             await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],

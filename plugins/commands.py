@@ -152,7 +152,6 @@ async def start(client, message):
                 f_caption = f"{title}"
             buttons = [
                 [
-                    InlineKeyboardButton('Main Group', url='https://t.me/BlasterMovieszz'),
                     InlineKeyboardButton('Latest Movies', url='https://t.me/blasters_monthly')
                 ]
                 ] 
@@ -263,7 +262,6 @@ async def start(client, message):
         f_caption = f"{files.file_name}"
     buttons = [
         [
-            InlineKeyboardButton('Group', url='https://t.me/BlasterMovieszz'),
             InlineKeyboardButton('Latest Movies', url='https://t.me/blasters_monthly')
         ]
         ]
@@ -350,7 +348,7 @@ async def delete(bot, message):
         if result.deleted_count:
             await msg.edit('File is successfully deleted from database')
         else:
-            # files indexed before https://github.com/EvamariaTG/EvaMaria/commit/f3d2a1bcb155faf44178e5d7a685a1b533e714bf#diff-86b613edf1748372103e94cacff3b578b36b698ef9c16817bb98fe9ef22fb669R39 
+            # files indexed before https://github.com/Rithesh9747/EvaMaria/commit/f3d2a1bcb155faf44178e5d7a685a1b533e714bf#diff-86b613edf1748372103e94cacff3b578b36b698ef9c16817bb98fe9ef22fb669R39 
             # have original file name.
             result = await Media.collection.delete_many({
                 'file_name': media.file_name,

@@ -6,11 +6,11 @@
 </h1>
 
 
-[![Stars](https://img.shields.io/github/stars/EvamariaTG/EvaMaria?style=flat-square&color=yellow)](https://github.com/EvamariaTG/EvaMaria/stargazers)
-[![Forks](https://img.shields.io/github/forks/EvamariaTG/EvaMaria?style=flat-square&color=orange)](https://github.com/EvamariaTG/EvaMaria/fork)
-[![Size](https://img.shields.io/github/repo-size/EvamariaTG/EvaMaria?style=flat-square&color=green)](https://github.com/EvamariaTG/EvaMaria/)   
-[![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/EvamariaTG/EvaMaria)   
-[![Contributors](https://img.shields.io/github/contributors/EvamariaTG/EvaMaria?style=flat-square&color=green)](https://github.com/EvamariaTG/EvaMaria/graphs/contributors)
+[![Stars](https://img.shields.io/github/stars/Rithesh9747/EvaMaria?style=flat-square&color=yellow)](https://github.com/Rithesh9747/EvaMaria/stargazers)
+[![Forks](https://img.shields.io/github/forks/Rithesh9747/EvaMaria?style=flat-square&color=orange)](https://github.com/Rithesh9747/EvaMaria/fork)
+[![Size](https://img.shields.io/github/repo-size/Rithesh9747/EvaMaria?style=flat-square&color=green)](https://github.com/EvamariaTG/EvaMaria/)   
+[![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/Rithesh9747/EvaMaria)   
+[![Contributors](https://img.shields.io/github/contributors/Rithesh9747/EvaMaria?style=flat-square&color=green)](https://github.com/Rithesh9747/EvaMaria/graphs/contributors)
 [![License](https://img.shields.io/badge/License-AGPL-blue)](https://github.com/EvamariaTG/EvaMaria/blob/main/LICENSE)
 [![Sparkline](https://stars.medv.io/EvamariaTG/EvaMaria.svg)](https://stars.medv.io/EvamariaTG/EvaMaria)
 
@@ -57,7 +57,7 @@ You can deploy this bot anywhere.
 <details><summary>Deploy To Heroku</summary>
 <p>
 <br>
-<a href="https://telegram.dog/XTZ_HerokuBot?start=RXZhbWFyaWFURy9FdmFNYXJpYSBtYXN0ZXI">
+<a href="https://heroku.com/deploy">
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
 </a>
 </p>
@@ -66,7 +66,7 @@ You can deploy this bot anywhere.
 <details><summary>Deploy To VPS</summary>
 <p>
 <pre>
-git clone https://github.com/EvamariaTG/evamaria
+git clone https://github.com/Rithesh9747/evamaria
 # Install Packages
 pip3 install -U -r requirements.txt
 Edit info.py with variables as given below then run bot

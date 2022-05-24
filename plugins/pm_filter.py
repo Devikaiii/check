@@ -91,20 +91,20 @@ async def next_page(bot, query):
         off_set = offset - 10
     if n_offset == 0:
         btn.append(
-            [InlineKeyboardButton("Previous Files", callback_data=f"next_{req}_{key}_{off_set}"),
-             InlineKeyboardButton(f"📃 Pages {round(int(offset) / 10) + 1} / {round(total / 10)}",
+            [InlineKeyboardButton("⬅ Previous Files ", callback_data=f"next_{req}_{key}_{off_set}"),
+             InlineKeyboardButton(f"📃 {round(int(offset) / 10) + 1} / {round(total / 10)}",
                                   callback_data="pages")]
         )
     elif off_set is None:
         btn.append(
             [InlineKeyboardButton(f"🗓 {round(int(offset) / 10) + 1} / {round(total / 10)}", callback_data="pages"),
-             InlineKeyboardButton("More Files", callback_data=f"next_{req}_{key}_{n_offset}")])
+             InlineKeyboardButton("More Files ➡", callback_data=f"next_{req}_{key}_{n_offset}")])
     else:
         btn.append(
             [
-                InlineKeyboardButton("Previous Files", callback_data=f"next_{req}_{key}_{off_set}"),
+                InlineKeyboardButton("⬅ Previous Files ", callback_data=f"next_{req}_{key}_{off_set}"),
                 InlineKeyboardButton(f"🗓 {round(int(offset) / 10) + 1} / {round(total / 10)}", callback_data="pages"),
-                InlineKeyboardButton("More Files", callback_data=f"next_{req}_{key}_{n_offset}")
+                InlineKeyboardButton("More Files ➡", callback_data=f"next_{req}_{key}_{n_offset}")
             ],
         )
     try:
@@ -136,8 +136,8 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit('This Movie Not Found In DataBase.....!!!!!!!! Movie is not released on Telegram i guess.Request here soon will be avalable @raixpiro_bot')
-            await asyncio.sleep(10)
+            k = await query.message.edit('I cant find <i>{query}</i> in my database... Please check entered spelling 😝 Or else movie is not released on OTT platform Ask here @raixpiro_bot ')
+            await asyncio.sleep(60)
             await k.delete()
 
 
@@ -681,7 +681,7 @@ async def auto_filter(client, msg, spoll=False):
         req = message.from_user.id if message.from_user else 0
         btn.append(
             [InlineKeyboardButton(text=f"🗓 1/{round(int(total_results) / 10)}", callback_data="pages"),
-             InlineKeyboardButton(text="More Files", callback_data=f"next_{req}_{key}_{offset}")]
+             InlineKeyboardButton(text="More Files ➡", callback_data=f"next_{req}_{key}_{offset}")]
         )
     else:
         btn.append(
@@ -727,15 +727,23 @@ async def auto_filter(client, msg, spoll=False):
         try:
             await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
                                       reply_markup=InlineKeyboardMarkup(btn))
+                                      await asyncio.sleep(600)
+                                      await dell.delete()
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             pic = imdb.get('poster')
             poster = pic.replace('.jpg', "._V1_UX360.jpg")
             await message.reply_photo(photo=poster, caption=cap[:1024], reply_markup=InlineKeyboardMarkup(btn))
+            await asyncio.sleep(600)
+            await dell.delete()
         except Exception as e:
             logger.exception(e)
             await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
+            await asyncio.sleep(600)
+            await dell.delete()
     else:
         await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
+        await asyncio.sleep(600)
+        await dell.delete()
     if spoll:
         await msg.message.delete()
 

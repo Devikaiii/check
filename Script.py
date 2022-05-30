@@ -7,17 +7,17 @@ Powered by @raixpiro_bot """
     HELP_TXT = """𝙷𝙴𝚈 {}
 𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
     ABOUT_TXT = """✯ 𝙼𝚈 𝙽𝙰𝙼𝙴: {}
-○ 𝐂𝐫𝐞𝐚𝐭𝐨𝐫 : [『ᴘɪʀᴏ』](https://t.me/rithesh_rkrm_17)
-○ 𝐋𝐚𝐧𝐠𝐮𝐚𝐠𝐞 : [𝐏𝐲𝐭𝐡𝐨𝐧 𝟑.𝟗.𝟏𝟎](https://www.python.org/)
-○ 𝐋𝐢𝐛𝐫𝐚𝐫𝐲 : [𝐏𝐲𝐫𝐨𝐠𝐫𝐚𝐦 𝐀𝐬𝐲𝐧𝐜𝐢𝐨 𝟏.𝟒.𝟏𝟐](https://docs.pyrogram.org/)
-○ 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 : [『ᴘɪʀᴏ』𝐁𝐨𝐭𝐬](https://t.me/rai_info17)
-○ 𝐃𝐚𝐭𝐚𝐁𝐚𝐬𝐞:[𝐌𝐎𝐍𝐆𝐎𝔻𝔹](https://mongodb.com)"""
+○ 𝐂𝐫𝐞𝐚𝐭𝐨𝐫 : <a href=https://t.me/rithesh_rkrm_17>『ᴘɪʀᴏ』</a>
+○ 𝐋𝐚𝐧𝐠𝐮𝐚𝐠𝐞 : [𝐏𝐲𝐭𝐡𝐨𝐧 𝟑.𝟗.𝟏𝟎]
+○ 𝐋𝐢𝐛𝐫𝐚𝐫𝐲 : [𝐏𝐲𝐫𝐨𝐠𝐫𝐚𝐦 𝐀𝐬𝐲𝐧𝐜𝐢𝐨 𝟏.𝟒.𝟏𝟐]
+○ 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 : [『ᴘɪʀᴏ』𝐁𝐨𝐭𝐬]
+○ 𝐃𝐚𝐭𝐚𝐁𝐚𝐬𝐞:[𝐌𝐎𝐍𝐆𝐎𝔻𝔹]"""
     SOURCE_TXT = """<b>NOTE:</b>
 - Eva Maria is a open source project. 
 - Source - https://t.me/rai_info17  
 
 <b>DEVS:</b>
-- <a href=https://t.me/rithesh_rkrm_17>RAI</a>"""
+- <a href=https://t.me/rithesh_rkrm_17>『ᴘɪʀᴏ』</a>"""
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
 - Filter is the feature were users can set automated replies for a particular keyword and EvaMaria will respond whenever a keyword is found the message
